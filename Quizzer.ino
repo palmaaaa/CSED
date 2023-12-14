@@ -147,8 +147,8 @@ void loop() {
 
 
     // Depending on the action, as described earlier, something will happen
-    switch(action) {
-      case 0: // Ending the game
+    switch (action) {
+      case 0:  // Ending the game
         Serial.println(p1_score);
         Serial.println(p2_score);
         //Flicker both leds in order to build suspance on who won
@@ -184,7 +184,7 @@ void loop() {
           delay(1500);
           digitalWrite(LED_US1, HIGH);
 
-        // If player two won, flick the light as many times as the points that the p2 scored
+          // If player two won, flick the light as many times as the points that the p2 scored
         } else if (p1_score < p2_score) {
           for (int j = 0; j < p2_score; j++) {
             digitalWrite(LED_US2, LOW);
@@ -196,24 +196,24 @@ void loop() {
           delay(1500);
           digitalWrite(LED_US2, HIGH);
 
-        // If there's a draw just turn both leds on
+          // If there's a draw just turn both leds on
         } else {
           digitalWrite(LED_US1, HIGH);
           digitalWrite(LED_US2, HIGH);
         }
-        do{}while(true); // End the game by doing an infinite loop
+        do {
+        } while (true);  // End the game by doing an infinite loop
         break;
 
-      case 1: // If the player who reserved the round didn't answer correctly give the point to the other player
-        if(p1){ // if player 1 failed, then light the other player's led to signal that the point went to him/her
-          p2_score++; 
+      case 1:      // If the player who reserved the round didn't answer correctly give the point to the other player
+        if (p1) {  // if player 1 failed, then light the other player's led to signal that the point went to him/her
+          p2_score++;
           digitalWrite(LED_US1, LOW);
           digitalWrite(LED_US2, HIGH);
           delay(1000);
           digitalWrite(LED_US2, LOW);
-        }
-        else{ 
-          p1_score++; 
+        } else {
+          p1_score++;
           digitalWrite(LED_US2, LOW);
           digitalWrite(LED_US1, HIGH);
           delay(1000);
@@ -221,12 +221,15 @@ void loop() {
         }
         break;
 
-      case 2: // Increase score of player who reserved the round
-        if(p1){ p1_score++; }
-        else{ p2_score++; }
+      case 2:  // Increase score of player who reserved the round
+        if (p1) {
+          p1_score++;
+        } else {
+          p2_score++;
+        }
         break;
 
-      
+
       default: break;
     }
 
@@ -238,8 +241,8 @@ void loop() {
     maxVal = 0.01700 * readUltrasonicDistance(US1_T, US1_E);
     maxVal2 = 0.01700 * readUltrasonicDistance(US2_T, US2_E);
   }
-  read_IRtransmitter_button(irReceive()); // Keep capturing the IR Remote inputs (-1 if no input was made)
-  if(action==0) p1=true; // If the host presses the power button then the game will end right away
+  read_IRtransmitter_button(irReceive());  // Keep capturing the IR Remote inputs (-1 if no input was made)
+  if (action == 0) p1 = true;              // If the host presses the power button then the game will end right away
   delay(50);
 }
 
@@ -250,8 +253,9 @@ void read_IRtransmitter_button(uint16_t b) {
       Serial.println("POWER CLICKED");
       action = 0;
       break;
-    case BUTTON_0: Serial.println("BUTTON 0 CLICKED"); 
-      action=1;
+    case BUTTON_0:
+      Serial.println("BUTTON 0 CLICKED");
+      action = 1;
       break;
     case BUTTON_1:
       Serial.println("BUTTON 1 CLICKED");
