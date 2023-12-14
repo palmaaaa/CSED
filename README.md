@@ -1,8 +1,7 @@
 # Quizzer
 The idea came from TV quiz games and to utilize Game Based Learning in order to make students play and learn!
 
-# How it is done
-## Arduino components
+# Arduino components
 1. Arduino board
 2. Prototyping board
 3. 3x Led
@@ -10,7 +9,7 @@ The idea came from TV quiz games and to utilize Game Based Learning in order to 
 5. IR Transmitter and receiver
 
 ![a](/images/QuizzerCircuit.png)
-![a](/images/FinalProject.png)
+![a](/images/FinalProject.jpeg)
 # Report
 The report has the description and idea of the project, circuit blocks and multiple photos.
 
