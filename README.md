@@ -18,7 +18,7 @@ The report has the description and idea of the project, circuit blocks and multi
 - IRemote: library for decoding IR signals [[GitHub source]](https://github.com/Arduino-IRremote/Arduino-IRremote) 
 
 # Context
-This project was designed for the *"Methods in Computer Science Education: Design"* course at *"Sapienza University of Rome"*. The objective of the project is to get students interested in programming. The code is well commented and has no class separation due to simplicity, but the idea of perfect/reusable code was not the core of the project.
+This project was designed for the *"Methods in Computer Science Education: Design"* course at *"Sapienza University of Rome"* (Master's Degree in Computer Science). The objective of the project is to get students interested in programming. The code is well commented and has no class separation due to simplicity, moreover the idea of perfect/reusable code was not the core of the project.
 
 ## Demo
 
