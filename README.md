@@ -7,6 +7,7 @@ The idea came from TV quiz games and to utilize Game Based Learning in order to 
 3. 3x Led
 4. Passive buzzer
 5. IR Transmitter and receiver
+6. 2x Ultrasonic Sensor
 
 ![a](/images/QuizzerCircuit.png)
 ![a](/images/FinalProject.jpeg)
