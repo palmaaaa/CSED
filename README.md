@@ -24,3 +24,9 @@ This project was designed for the *"Methods in Computer Science Education: Desig
 ## Demo
 
 [Here](https://www.youtube.com/playlist?list=PLhaPUkQVAEdwnk7i53w4BsobRZ2GsOA4Y) Demo of Quizzer
+
+# Learning Unit
+In addition to the project, an assignment was given to develop a learning unit on an arbitrary topic.
+
+## Context
+I have been privately teaching Object-Oriented Programming (OOP) to university students for many years. Due to my passion for the topic and the experience gained through these lessons, I have chosen to focus on OOP for this learning unit.
